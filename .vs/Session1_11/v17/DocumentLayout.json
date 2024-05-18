@@ -1,0 +1,208 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\obraz\\source\\repos\\Session1_11\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E4E09C57-7F6E-4CCA-9F0F-1D828A59C2AC}|Session1_11.csproj|c:\\users\\obraz\\source\\repos\\session1_11\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4E09C57-7F6E-4CCA-9F0F-1D828A59C2AC}|Session1_11.csproj|solutionrelative:roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4E09C57-7F6E-4CCA-9F0F-1D828A59C2AC}|Session1_11.csproj|c:\\users\\obraz\\source\\repos\\session1_11\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E4E09C57-7F6E-4CCA-9F0F-1D828A59C2AC}|Session1_11.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4E09C57-7F6E-4CCA-9F0F-1D828A59C2AC}|Session1_11.csproj|c:\\users\\obraz\\source\\repos\\session1_11\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4E09C57-7F6E-4CCA-9F0F-1D828A59C2AC}|Session1_11.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4E09C57-7F6E-4CCA-9F0F-1D828A59C2AC}|Session1_11.csproj|c:\\users\\obraz\\source\\repos\\session1_11\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4E09C57-7F6E-4CCA-9F0F-1D828A59C2AC}|Session1_11.csproj|solutionrelative:users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4E09C57-7F6E-4CCA-9F0F-1D828A59C2AC}|Session1_11.csproj|c:\\users\\obraz\\source\\repos\\session1_11\\modelsession1.context.tt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{E4E09C57-7F6E-4CCA-9F0F-1D828A59C2AC}|Session1_11.csproj|solutionrelative:modelsession1.context.tt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4E09C57-7F6E-4CCA-9F0F-1D828A59C2AC}|Session1_11.csproj|c:\\users\\obraz\\source\\repos\\session1_11\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E4E09C57-7F6E-4CCA-9F0F-1D828A59C2AC}|Session1_11.csproj|solutionrelative:window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4E09C57-7F6E-4CCA-9F0F-1D828A59C2AC}|Session1_11.csproj|c:\\users\\obraz\\source\\repos\\session1_11\\modelsession1.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4E09C57-7F6E-4CCA-9F0F-1D828A59C2AC}|Session1_11.csproj|solutionrelative:modelsession1.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4E09C57-7F6E-4CCA-9F0F-1D828A59C2AC}|Session1_11.csproj|c:\\users\\obraz\\source\\repos\\session1_11\\modelsession1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4E09C57-7F6E-4CCA-9F0F-1D828A59C2AC}|Session1_11.csproj|solutionrelative:modelsession1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4E09C57-7F6E-4CCA-9F0F-1D828A59C2AC}|Session1_11.csproj|c:\\users\\obraz\\source\\repos\\session1_11\\countries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4E09C57-7F6E-4CCA-9F0F-1D828A59C2AC}|Session1_11.csproj|solutionrelative:countries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4E09C57-7F6E-4CCA-9F0F-1D828A59C2AC}|Session1_11.csproj|c:\\users\\obraz\\source\\repos\\session1_11\\offices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4E09C57-7F6E-4CCA-9F0F-1D828A59C2AC}|Session1_11.csproj|solutionrelative:offices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4E09C57-7F6E-4CCA-9F0F-1D828A59C2AC}|Session1_11.csproj|c:\\users\\obraz\\source\\repos\\session1_11\\modelsession1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{E4E09C57-7F6E-4CCA-9F0F-1D828A59C2AC}|Session1_11.csproj|solutionrelative:modelsession1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ModelSession1.Context.tt",
+              "DocumentMoniker": "C:\\Users\\obraz\\source\\repos\\Session1_11\\ModelSession1.Context.tt",
+              "RelativeDocumentMoniker": "ModelSession1.Context.tt",
+              "ToolTip": "C:\\Users\\obraz\\source\\repos\\Session1_11\\ModelSession1.Context.tt",
+              "RelativeToolTip": "ModelSession1.Context.tt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-05-18T06:22:45.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ModelSession1.cs",
+              "DocumentMoniker": "C:\\Users\\obraz\\source\\repos\\Session1_11\\ModelSession1.cs",
+              "RelativeDocumentMoniker": "ModelSession1.cs",
+              "ToolTip": "C:\\Users\\obraz\\source\\repos\\Session1_11\\ModelSession1.cs",
+              "RelativeToolTip": "ModelSession1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T06:22:39.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\obraz\\source\\repos\\Session1_11\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\obraz\\source\\repos\\Session1_11\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-18T06:13:01.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\obraz\\source\\repos\\Session1_11\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\obraz\\source\\repos\\Session1_11\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAiwDUAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T06:13:01.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Users.cs",
+              "DocumentMoniker": "C:\\Users\\obraz\\source\\repos\\Session1_11\\Users.cs",
+              "RelativeDocumentMoniker": "Users.cs",
+              "ToolTip": "C:\\Users\\obraz\\source\\repos\\Session1_11\\Users.cs",
+              "RelativeToolTip": "Users.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAswBQAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T06:22:27.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Roles.cs",
+              "DocumentMoniker": "C:\\Users\\obraz\\source\\repos\\Session1_11\\Roles.cs",
+              "RelativeDocumentMoniker": "Roles.cs",
+              "ToolTip": "C:\\Users\\obraz\\source\\repos\\Session1_11\\Roles.cs",
+              "RelativeToolTip": "Roles.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAA4wBYAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T06:22:22.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Window1.xaml",
+              "DocumentMoniker": "C:\\Users\\obraz\\source\\repos\\Session1_11\\Window1.xaml",
+              "RelativeDocumentMoniker": "Window1.xaml",
+              "ToolTip": "C:\\Users\\obraz\\source\\repos\\Session1_11\\Window1.xaml",
+              "RelativeToolTip": "Window1.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-18T06:44:28.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ModelSession1.Context.cs",
+              "DocumentMoniker": "C:\\Users\\obraz\\source\\repos\\Session1_11\\ModelSession1.Context.cs",
+              "RelativeDocumentMoniker": "ModelSession1.Context.cs",
+              "ToolTip": "C:\\Users\\obraz\\source\\repos\\Session1_11\\ModelSession1.Context.cs",
+              "RelativeToolTip": "ModelSession1.Context.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T06:22:49.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Countries.cs",
+              "DocumentMoniker": "C:\\Users\\obraz\\source\\repos\\Session1_11\\Countries.cs",
+              "RelativeDocumentMoniker": "Countries.cs",
+              "ToolTip": "C:\\Users\\obraz\\source\\repos\\Session1_11\\Countries.cs",
+              "RelativeToolTip": "Countries.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T06:22:30.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Offices.cs",
+              "DocumentMoniker": "C:\\Users\\obraz\\source\\repos\\Session1_11\\Offices.cs",
+              "RelativeDocumentMoniker": "Offices.cs",
+              "ToolTip": "C:\\Users\\obraz\\source\\repos\\Session1_11\\Offices.cs",
+              "RelativeToolTip": "Offices.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T06:22:14.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ModelSession1.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\obraz\\source\\repos\\Session1_11\\ModelSession1.edmx",
+              "RelativeDocumentMoniker": "ModelSession1.edmx",
+              "ToolTip": "C:\\Users\\obraz\\source\\repos\\Session1_11\\ModelSession1.edmx [Diagram1]",
+              "RelativeToolTip": "ModelSession1.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-05-18T06:20:39.612Z",
+              "EditorCaption": " [Diagram1]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
