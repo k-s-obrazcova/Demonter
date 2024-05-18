@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6f6020081a2442bea01775de4cb65691" Name="Diagram1">
+        <EntityTypeShape EntityType="SamoletsModel.Countries" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SamoletsModel.Offices" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SamoletsModel.Roles" Width="1.5" PointX="3" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SamoletsModel.Users" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="SamoletsModel.FK_Office_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="SamoletsModel.FK_Users_Offices" ManuallyRouted="false" />
+        <AssociationConnector Association="SamoletsModel.FK_Users_Roles" ManuallyRouted="true" >
+          <ConnectorPoint PointX="4.5" PointY="5.047841796875" />
+          <ConnectorPoint PointX="6" PointY="5.047841796875" />
+          <ConnectorPoint PointX="6" PointY="4.1340950520833335" />
+        </AssociationConnector>
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
