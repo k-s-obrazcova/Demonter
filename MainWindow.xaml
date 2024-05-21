@@ -12,7 +12,7 @@
             <RowDefinition Height="159*"/>
         </Grid.RowDefinitions>
         <Grid Grid.Row="1">
-            <ListView ScrollViewer.HorizontalScrollBarVisibility="Disabled" x:Name="ListCheck" Margin="0,10,0,0" Grid.Row="1" SelectionChanged="ListCheck_SelectionChanged">
+            <ListView ScrollViewer.HorizontalScrollBarVisibility="Disabled" x:Name="ListCheck" Margin="0,10,0,0" Grid.Row="1" SelectionChanged="ListCheck_SelectionChanged" >
                 <ListView.ItemsPanel>
                     <ItemsPanelTemplate >
                         <WrapPanel Orientation="Horizontal"></WrapPanel>
@@ -27,13 +27,13 @@
                                 <TextBlock HorizontalAlignment="Center" Height="34" Margin="0,214,0,0" TextWrapping="Wrap" Text="{Binding Email}" VerticalAlignment="Top" Width="248"/>
                                 <TextBlock HorizontalAlignment="Center" Height="34" Margin="0,233,0,0" TextWrapping="Wrap" Text="{Binding FirstName}" VerticalAlignment="Top" Width="248"/>
                                 <TextBlock HorizontalAlignment="Center" Height="34" Margin="0,252,0,0" TextWrapping="Wrap" Text="{Binding LastName}" VerticalAlignment="Top" Width="248"/>
-                                <Button Content="Button" HorizontalAlignment="Center" Height="41" Margin="0,310,0,0" VerticalAlignment="Top" Width="221" Click="Info_Click"/>
+                                <Button Content="Button" HorizontalAlignment="Center" Height="41" Margin="0,310,0,0" VerticalAlignment="Top" Width="221"/>
 
                             </Grid>
                             <Border.ContextMenu>
                                 <ContextMenu>
-                                    <MenuItem Header="Изменить" Click="ConsoleWarn_Click"/>
-                                    <MenuItem Header="Изменить" Click="ConsoleInfo_Click"/>
+                                    <MenuItem Header="Предупреждение" Click="ConsoleWarn_Click"/>
+                                    <MenuItem Header="Информация" Click="ConsoleInfo_Click"/>
                                 </ContextMenu>
                             </Border.ContextMenu>
                         </Border>
@@ -43,19 +43,20 @@
             </ListView>
         </Grid>
         <Grid Grid.Row="0">
-            
-            <TextBox x:Name="Email" HorizontalAlignment="Left" Height="20" Margin="10,10,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Width="335"/>
-            <TextBox x:Name="Last_Name" HorizontalAlignment="Left" Height="20" Margin="10,61,0,0" TextWrapping="Wrap" Text="Last_Name" VerticalAlignment="Top" Width="335"/>
-            <TextBox x:Name="First_Name" HorizontalAlignment="Left" Height="20" Margin="10,112,0,0" TextWrapping="Wrap" Text="First_Name" VerticalAlignment="Top" Width="335"/>
-            <TextBox x:Name="Password" HorizontalAlignment="Left" Height="20" Margin="386,10,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="335"/>
-            <ComboBox x:Name="Office" HorizontalAlignment="Left" Margin="386,60,0,0" VerticalAlignment="Top" Width="335" Height="21" SelectionChanged="ComboBox_SelectionChanged"/>
-            <DatePicker x:Name="Birthday" HorizontalAlignment="Left" Margin="386,112,0,0" VerticalAlignment="Top" Height="22" Width="215"/>
-            <RadioButton x:Name="Role" Content="Admin" HorizontalAlignment="Left" Height="20" Margin="640,115,0,0" VerticalAlignment="Top" Width="112"/>
-            <Button Content="Add" HorizontalAlignment="Left" Height="40" Margin="1116,10,0,0" VerticalAlignment="Top" Width="96" Click="Add_Click"/>
-            <Button Content="Update" HorizontalAlignment="Left" Height="38" Margin="1116,57,0,0" VerticalAlignment="Top" Width="96" Click="Update_Click"/>
-            <Button Content="Delete" HorizontalAlignment="Left" Height="38" Margin="1116,103,0,0" VerticalAlignment="Top" Width="96" Click="Delete_Click"/>
-            <Image x:Name="Profile" HorizontalAlignment="Left" Height="131" Margin="780,10,0,0" VerticalAlignment="Top" Width="158"/>
-            <Button Content="+" HorizontalAlignment="Left" Height="44" Margin="982,0,0,0" VerticalAlignment="Center" Width="83" Click="Photo_Click"/>
+            <TextBox x:Name="Email" HorizontalAlignment="Left" Height="20" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Email" Width="335"/>
+            <TextBox x:Name="Last_Name" HorizontalAlignment="Left" Height="20" Margin="10,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Last Name" Width="335"/>
+            <TextBox x:Name="First_Name" HorizontalAlignment="Left" Height="20" Margin="10,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="First Name" Width="335"/>
+            <TextBox x:Name="Password" HorizontalAlignment="Left" Height="20" Margin="380,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Password" Width="335"/>
+            <ComboBox x:Name="Office" HorizontalAlignment="Left" Height="20" Margin="380,71,0,0" VerticalAlignment="Top" Width="335" SelectionChanged="Office_SelectionChanged"/>
+            <DatePicker x:Name="Birthday" HorizontalAlignment="Left" Height="25" Margin="380,132,0,0" VerticalAlignment="Top" Width="115"/>
+            <RadioButton x:Name="Role" Content="Admin" HorizontalAlignment="Left" Height="27" Margin="625,135,0,0" VerticalAlignment="Top" Width="68" />
+            <Image x:Name="Profile" HorizontalAlignment="Left" Height="130" Width="160" Margin="780,10,0,0" VerticalAlignment="Top"/>
+            <Button Content="+" HorizontalAlignment="Left" Margin="1013,58,0,0" VerticalAlignment="Top" Height="46" Width="56" Click="Photo_Click"/>
+            <Button Content="Add" Margin="1111,20,10,134" Click="Add_Click" VerticalAlignment="Top" Height="46" Width="100"/>
+            <Button Content="Update" Margin="1111,81,10,72" Click="Update_Click" VerticalAlignment="Top" Height="46" Width="100"/>
+            <Button Content="Delete" Margin="1111,142,10,14" Click="Delete_Click" VerticalAlignment="Top" Height="46" Width="100"/>
+
+
 
         </Grid>
     </Grid>

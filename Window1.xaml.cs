@@ -19,12 +19,9 @@ namespace WpfApp26
     /// </summary>
     public partial class Window1 : Window
     {
-        public Window1(Users users)
+        public Window1()
         {
             InitializeComponent();
-            Email.Text = users.Email;
-            Last_Name.Text = users.LastName;
-            First_Name.Text = users.FirstName;
         }
     }
 }

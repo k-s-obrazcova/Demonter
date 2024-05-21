@@ -35,16 +35,15 @@ namespace WpfApp26
         {
             
             var UsersList = db.Users.ToList();
-            //UsersList = UsersList.Where(a => a.First_Name == "Андрей").Distinct().ToList();
             ListCheck.SelectedValuePath = "ID";
             ListCheck.ItemsSource = UsersList;
             ListCheck.SelectionMode = SelectionMode.Single;
 
             var OfficeList = db.Offices.ToList();
             Office.ItemsSource = OfficeList;
+            Office.SelectedIndex = 0;
             Office.DisplayMemberPath = "Title";
             Office.SelectedValuePath = "ID";
-            Office.SelectedIndex = 0;
 
 
 
@@ -71,9 +70,71 @@ namespace WpfApp26
 
         }
 
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void Office_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+
+        private void Add_Click(object sender, RoutedEventArgs e)
+        {
+            string hash = BitConverter.ToString(MD5.Create().ComputeHash(Encoding.UTF8.GetBytes(Password.Text))).Replace("-", "");
+            Users user = new Users 
+            { 
+            Email = Email.Text,
+            Password = hash,
+            LastName = Last_Name.Text,
+            FirstName = First_Name.Text,
+            OfficeID = (int)Office.SelectedValue,
+            Birthdate = Birthday.SelectedDate.Value,
+            RoleID = (bool)Role.IsChecked ? 1 : 2,
+            Active = true,
+            };
+            db.Users.Add(user);
+            try
+            {
+                db.SaveChanges();
+            }
+            catch 
+            { 
+            
+            }
+            List_Reload();
+        }
+        private void Update_Click(object sender, RoutedEventArgs e)
+        {
+            if (ListCheck.SelectedItem != null)
+            {
+                Users users = (Users)ListCheck.SelectedItem;
+                users.LastName = Last_Name.Text;
+                db.SaveChanges();
+                List_Reload();
+            }
+
+
+        }
+        private void Delete_Click(object sender, RoutedEventArgs e)
+        {
+            if (ListCheck.SelectedItem != null)
+            {
+                Users users = (Users)ListCheck.SelectedItem;
+                db.Users.Remove(users);
+                db.SaveChanges();
+                List_Reload();
+            }
+
+        }
+        private void Photo_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Title = "Выбор фото";
+            openFileDialog.Filter = "All supported graphics| *.jpg;*.jpeg;*.png;";
+            if (openFileDialog.ShowDialog() == true)
+            {
+                Profile.Source = new BitmapImage(new Uri(openFileDialog.FileName));
+                File.Delete(Directory.GetCurrentDirectory() + "/Photo/" + openFileDialog.SafeFileName);
+                File.Copy(openFileDialog.FileName, Directory.GetCurrentDirectory() + "/Photo/" + openFileDialog.SafeFileName);
+
+            }
 
         }
 
@@ -81,14 +142,14 @@ namespace WpfApp26
         {
             if (ListCheck.SelectedItem != null)
             {
-                Users selectedItem = (Users)ListCheck.SelectedItem;
-                Email.Text = selectedItem.Email;
-                Last_Name.Text = selectedItem.LastName;
-                First_Name.Text = selectedItem.FirstName;
-                Office.SelectedItem = selectedItem.Offices;
-                Password.Text = selectedItem.Password;
-                Birthday.SelectedDate = selectedItem.Birthdate;
-                if (selectedItem.RoleID == 1)
+                Users users = (Users)ListCheck.SelectedItem;
+                Email.Text = users.Email;
+                Last_Name.Text = users.LastName;
+                First_Name.Text = users.FirstName;
+                Password.Text = users.Password;
+                Office.SelectedItem = users.Offices;
+                Birthday.SelectedDate = users.Birthdate;
+                if (users.RoleID == 1)
                 {
                     Role.IsChecked = true;
                 }
@@ -97,91 +158,6 @@ namespace WpfApp26
                     Role.IsChecked = false;
                 }
             }
-
-        }
-
-        private void Photo_Click(object sender, RoutedEventArgs e)
-        {
-            OpenFileDialog op = new OpenFileDialog();
-            op.Title = "Выбор фото";
-            op.Filter = "All supported graphics|*.jpg;*.jpeg;*.png";
-            if (op.ShowDialog() == true)
-            {
-                Profile.Source = new BitmapImage(new Uri(op.FileName));
-                File.Delete(Directory.GetCurrentDirectory() +"/Photo/" + op.SafeFileName);
-                File.Copy(op.FileName, Directory.GetCurrentDirectory() + "/Photo/" + op.SafeFileName);
-                Console.WriteLine("Фото успешно скопировано в папку Photo.");
-            }
-            //File.Delete(Directory.GetCurrentDirectory() +"/Photo/" + "тут название староrо файла");
-        }
-
-        private void Add_Click(object sender, RoutedEventArgs e)
-        {
-            string hash = BitConverter.ToString(MD5.Create().ComputeHash(Encoding.UTF8.GetBytes(Password.Text))).Replace("-", "");
-            Users user = new Users
-            {
-                Email = Email.Text,
-                Password = hash,
-                LastName = Last_Name.Text,
-                FirstName = First_Name.Text,
-                OfficeID = (int)Office.SelectedValue,
-                Birthdate = Birthday.SelectedDate.Value,
-                RoleID = (bool)Role.IsChecked ? 1 : 2,
-                Active = true,
-
-
-            };
-            db.Users.Add(user);
-
-            try { 
-                db.SaveChanges();
-            }
-            catch
-            {
-
-            }
-            List_Reload();
-
-        }
-
-        private void Update_Click(object sender, RoutedEventArgs e)
-        {
-            if (ListCheck.SelectedItem != null)
-            {
-                Users selectedItem = (Users)ListCheck.SelectedItem;
-                selectedItem.LastName = Last_Name.Text;
-                db.SaveChanges();
-                List_Reload();
-            }
-        }
-
-        private void Delete_Click(object sender, RoutedEventArgs e)
-        {
-            Users selectedItem = (Users)ListCheck.SelectedItem;
-            db.Users.Remove(selectedItem);
-            db.SaveChanges();
-            List_Reload();
-
-        }
-        private void Info_Click(object sender, RoutedEventArgs e)
-        {
-
-            Button button = sender as Button;
-            if (button != null)
-            {
-                Grid grid = button.Parent as Grid;
-                if (grid != null)
-                {
-                    Users selectedItem = grid.DataContext as Users;
-                    if (selectedItem != null)
-                    {
-                        Window1 window = new Window1(selectedItem);
-                        window.Show();
-                        this.Close();
-                    }
-                }
-            }
-            
         }
     }
 }
