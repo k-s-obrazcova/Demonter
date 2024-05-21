@@ -12,7 +12,7 @@
             <RowDefinition Height="159*"/>
         </Grid.RowDefinitions>
         <Grid Grid.Row="1">
-            <ListView ScrollViewer.HorizontalScrollBarVisibility="Disabled" x:Name="ListCheck" Margin="0,10,0,0" Grid.Row="1">
+            <ListView ScrollViewer.HorizontalScrollBarVisibility="Disabled" x:Name="ListCheck" Margin="0,10,0,0" Grid.Row="1" SelectionChanged="ListCheck_SelectionChanged">
                 <ListView.ItemsPanel>
                     <ItemsPanelTemplate >
                         <WrapPanel Orientation="Horizontal"></WrapPanel>
@@ -20,15 +20,15 @@
                 </ListView.ItemsPanel>
                 <ListView.ItemTemplate >
                     <DataTemplate >
-                        
+
                         <Border BorderThickness="1" BorderBrush="DarkGray"  >
                             <Grid Height="380" Width="282">
                                 <Image HorizontalAlignment="Center" Height="250" Margin="0,10,0,0" VerticalAlignment="Top" Width="200" Source="/Драцена.jpg" />
                                 <TextBlock HorizontalAlignment="Center" Height="34" Margin="0,214,0,0" TextWrapping="Wrap" Text="{Binding Email}" VerticalAlignment="Top" Width="248"/>
                                 <TextBlock HorizontalAlignment="Center" Height="34" Margin="0,233,0,0" TextWrapping="Wrap" Text="{Binding FirstName}" VerticalAlignment="Top" Width="248"/>
                                 <TextBlock HorizontalAlignment="Center" Height="34" Margin="0,252,0,0" TextWrapping="Wrap" Text="{Binding LastName}" VerticalAlignment="Top" Width="248"/>
-                                <Button Content="Button" HorizontalAlignment="Center" Height="41" Margin="0,310,0,0" VerticalAlignment="Top" Width="221"/>
-                                
+                                <Button Content="Button" HorizontalAlignment="Center" Height="41" Margin="0,310,0,0" VerticalAlignment="Top" Width="221" Click="Info_Click"/>
+
                             </Grid>
                             <Border.ContextMenu>
                                 <ContextMenu>
@@ -42,6 +42,21 @@
                 </ListView.ItemTemplate>
             </ListView>
         </Grid>
+        <Grid Grid.Row="0">
+            
+            <TextBox x:Name="Email" HorizontalAlignment="Left" Height="20" Margin="10,10,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Width="335"/>
+            <TextBox x:Name="Last_Name" HorizontalAlignment="Left" Height="20" Margin="10,61,0,0" TextWrapping="Wrap" Text="Last_Name" VerticalAlignment="Top" Width="335"/>
+            <TextBox x:Name="First_Name" HorizontalAlignment="Left" Height="20" Margin="10,112,0,0" TextWrapping="Wrap" Text="First_Name" VerticalAlignment="Top" Width="335"/>
+            <TextBox x:Name="Password" HorizontalAlignment="Left" Height="20" Margin="386,10,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="335"/>
+            <ComboBox x:Name="Office" HorizontalAlignment="Left" Margin="386,60,0,0" VerticalAlignment="Top" Width="335" Height="21" SelectionChanged="ComboBox_SelectionChanged"/>
+            <DatePicker x:Name="Birthday" HorizontalAlignment="Left" Margin="386,112,0,0" VerticalAlignment="Top" Height="22" Width="215"/>
+            <RadioButton x:Name="Role" Content="Admin" HorizontalAlignment="Left" Height="20" Margin="640,115,0,0" VerticalAlignment="Top" Width="112"/>
+            <Button Content="Add" HorizontalAlignment="Left" Height="40" Margin="1116,10,0,0" VerticalAlignment="Top" Width="96" Click="Add_Click"/>
+            <Button Content="Update" HorizontalAlignment="Left" Height="38" Margin="1116,57,0,0" VerticalAlignment="Top" Width="96" Click="Update_Click"/>
+            <Button Content="Delete" HorizontalAlignment="Left" Height="38" Margin="1116,103,0,0" VerticalAlignment="Top" Width="96" Click="Delete_Click"/>
+            <Image x:Name="Profile" HorizontalAlignment="Left" Height="131" Margin="780,10,0,0" VerticalAlignment="Top" Width="158"/>
+            <Button Content="+" HorizontalAlignment="Left" Height="44" Margin="982,0,0,0" VerticalAlignment="Center" Width="83" Click="Photo_Click"/>
 
+        </Grid>
     </Grid>
 </Window>

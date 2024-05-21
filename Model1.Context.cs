@@ -13,10 +13,10 @@ namespace WpfApp26
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class SamoletsEntities : DbContext
+    public partial class Session1_11Entities : DbContext
     {
-        public SamoletsEntities()
-            : base("name=SamoletsEntities")
+        public Session1_11Entities()
+            : base("name=Session1_11Entities")
         {
         }
     

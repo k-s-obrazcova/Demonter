@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="Хранилище SamoletsModelContainer" CdmEntityContainer="SamoletsEntities">
+  <EntityContainerMapping StorageEntityContainer="Хранилище Session1_11ModelContainer" CdmEntityContainer="Session1_11Entities">
     <EntitySetMapping Name="Countries">
-      <EntityTypeMapping TypeName="SamoletsModel.Countries">
+      <EntityTypeMapping TypeName="Session1_11Model.Countries">
         <MappingFragment StoreEntitySet="Countries">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -10,7 +10,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Offices">
-      <EntityTypeMapping TypeName="SamoletsModel.Offices">
+      <EntityTypeMapping TypeName="Session1_11Model.Offices">
         <MappingFragment StoreEntitySet="Offices">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="CountryID" ColumnName="CountryID" />
@@ -21,7 +21,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Roles">
-      <EntityTypeMapping TypeName="SamoletsModel.Roles">
+      <EntityTypeMapping TypeName="Session1_11Model.Roles">
         <MappingFragment StoreEntitySet="Roles">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Title" ColumnName="Title" />
@@ -29,7 +29,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Users">
-      <EntityTypeMapping TypeName="SamoletsModel.Users">
+      <EntityTypeMapping TypeName="Session1_11Model.Users">
         <MappingFragment StoreEntitySet="Users">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="RoleID" ColumnName="RoleID" />
