@@ -27,7 +27,7 @@
                                 <TextBlock HorizontalAlignment="Center" Height="34" Margin="0,214,0,0" TextWrapping="Wrap" Text="{Binding Email}" VerticalAlignment="Top" Width="248"/>
                                 <TextBlock HorizontalAlignment="Center" Height="34" Margin="0,233,0,0" TextWrapping="Wrap" Text="{Binding FirstName}" VerticalAlignment="Top" Width="248"/>
                                 <TextBlock HorizontalAlignment="Center" Height="34" Margin="0,252,0,0" TextWrapping="Wrap" Text="{Binding LastName}" VerticalAlignment="Top" Width="248"/>
-                                <Button Content="Button" HorizontalAlignment="Center" Height="41" Margin="0,310,0,0" VerticalAlignment="Top" Width="221"/>
+                                <Button Content="Button" HorizontalAlignment="Center" Height="41" Margin="0,310,0,0" VerticalAlignment="Top" Width="221" Click="Info_Click"/>
 
                             </Grid>
                             <Border.ContextMenu>
@@ -43,8 +43,8 @@
             </ListView>
         </Grid>
         <Grid Grid.Row="0">
-            <TextBox x:Name="Email" HorizontalAlignment="Left" Height="20" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Email" Width="335"/>
-            <TextBox x:Name="Last_Name" HorizontalAlignment="Left" Height="20" Margin="10,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Last Name" Width="335"/>
+            <TextBox  x:Name="Email" HorizontalAlignment="Left" Height="20" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Email" Width="335"/>
+            <TextBox  x:Name="Last_Name" HorizontalAlignment="Left" Height="20" Margin="10,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Last Name" Width="335"/>
             <TextBox x:Name="First_Name" HorizontalAlignment="Left" Height="20" Margin="10,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="First Name" Width="335"/>
             <TextBox x:Name="Password" HorizontalAlignment="Left" Height="20" Margin="380,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Password" Width="335"/>
             <ComboBox x:Name="Office" HorizontalAlignment="Left" Height="20" Margin="380,71,0,0" VerticalAlignment="Top" Width="335" SelectionChanged="Office_SelectionChanged"/>

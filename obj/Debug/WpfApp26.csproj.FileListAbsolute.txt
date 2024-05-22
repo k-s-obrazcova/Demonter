@@ -22,3 +22,4 @@ C:\Users\obraz\source\repos\WpfApp26\obj\Debug\WpfApp26_Content.g.cs
 C:\Users\obraz\source\repos\WpfApp26\obj\Debug\WpfApp26.csproj.Up2Date
 C:\Users\obraz\source\repos\WpfApp26\obj\Debug\Window1.g.cs
 C:\Users\obraz\source\repos\WpfApp26\obj\Debug\Window1.baml
+C:\Users\obraz\source\repos\WpfApp26\obj\Debug\App.baml

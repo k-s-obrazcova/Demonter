@@ -10,9 +10,9 @@
 
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="380" Margin="240,25,0,0" VerticalAlignment="Top" Width="282"/>
         <Image HorizontalAlignment="Left" Height="143" Margin="271,48,0,0" VerticalAlignment="Top" Width="225"/>
-        <TextBlock HorizontalAlignment="Left" Height="34" Margin="257,215,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="248"/>
-        <TextBlock HorizontalAlignment="Left" Height="34" Margin="257,254,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="248"/>
-        <TextBlock HorizontalAlignment="Left" Height="34" Margin="257,293,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="248"/>
+        <TextBlock x:Name="Email" HorizontalAlignment="Left" Height="34" Margin="257,215,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="248"/>
+        <TextBlock x:Name="Last_Name" HorizontalAlignment="Left" Height="34" Margin="257,254,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="248"/>
+        <TextBlock x:Name="First_Name" HorizontalAlignment="Left" Height="34" Margin="257,293,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="248"/>
         <Button Content="Button" HorizontalAlignment="Left" Height="41" Margin="271,341,0,0" VerticalAlignment="Top" Width="221"/>
     </Grid>
 </Window>
